@@ -153,5 +153,6 @@ public class GUIBODEGA extends JFrame {
 		contentPane.add(btnActualizar);
 		//Modificación Jose Miguel Aguilar Juaréz
 		//Modifiacion Fabrizio Antonio Balcazar Tapia
+		//Modificación Andre Alejandro Arbayza Pareja
 	}
 }
