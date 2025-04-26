@@ -17,6 +17,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import java.awt.SystemColor;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class GUIBODEGA extends JFrame {
 
@@ -126,6 +128,11 @@ public class GUIBODEGA extends JFrame {
 		scrollPane.setViewportView(txtLista);
 		
 		JButton btnAgregar = new JButton("AGREGAR PRODUCTO");
+		btnAgregar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//Rodrigo Sebastian Amoroto Castillo - Agregar Producto
+			}
+		});
 		btnAgregar.setBounds(272, 53, 224, 21);
 		contentPane.add(btnAgregar);
 		
