@@ -63,10 +63,10 @@ public class GUIBODEGA extends JFrame {
 		lblNewLabel.setFont(new Font("Comic Sans MS", Font.PLAIN, 15));
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblIdproducto = new JLabel("id_producto:");
-		lblIdproducto.setBounds(10, 57, 62, 13);
-		lblIdproducto.setFont(new Font("Comic Sans MS", Font.PLAIN, 10));
-		contentPane.add(lblIdproducto);
+		JLabel ID_producto = new JLabel("ID_producto:");
+		ID_producto.setBounds(10, 57, 72, 13);
+		ID_producto.setFont(new Font("Comic Sans MS", Font.PLAIN, 10));
+		contentPane.add(ID_producto);
 		
 		JLabel lblDescripcin = new JLabel("Descripción:");
 		lblDescripcin.setBounds(10, 80, 62, 13);
@@ -89,27 +89,27 @@ public class GUIBODEGA extends JFrame {
 		contentPane.add(lblCantidad);
 		
 		txt_IDp = new JTextField();
-		txt_IDp.setBounds(78, 54, 96, 19);
+		txt_IDp.setBounds(92, 54, 119, 19);
 		contentPane.add(txt_IDp);
 		txt_IDp.setColumns(10);
 		
 		txt_Descri = new JTextField();
-		txt_Descri.setBounds(78, 77, 96, 19);
+		txt_Descri.setBounds(92, 77, 119, 19);
 		txt_Descri.setColumns(10);
 		contentPane.add(txt_Descri);
 		
 		txtMarca = new JTextField();
-		txtMarca.setBounds(78, 101, 96, 19);
+		txtMarca.setBounds(92, 101, 119, 19);
 		txtMarca.setColumns(10);
 		contentPane.add(txtMarca);
 		
 		txt_Categ = new JTextField();
-		txt_Categ.setBounds(78, 127, 96, 19);
+		txt_Categ.setBounds(92, 127, 119, 19);
 		txt_Categ.setColumns(10);
 		contentPane.add(txt_Categ);
 		
 		txt_Cantidad = new JTextField();
-		txt_Cantidad.setBounds(78, 150, 96, 19);
+		txt_Cantidad.setBounds(92, 150, 119, 19);
 		txt_Cantidad.setColumns(10);
 		contentPane.add(txt_Cantidad);
 		
@@ -117,5 +117,32 @@ public class GUIBODEGA extends JFrame {
 		lblNewLabel_1.setBounds(78, 179, 133, 13);
 		lblNewLabel_1.setForeground(new Color(255, 0, 0));
 		contentPane.add(lblNewLabel_1);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(10, 197, 587, 217);
+		contentPane.add(scrollPane);
+		
+		JTextArea txtLista = new JTextArea();
+		scrollPane.setViewportView(txtLista);
+		
+		JButton btnAgregar = new JButton("AGREGAR PRODUCTO");
+		btnAgregar.setBounds(272, 53, 224, 21);
+		contentPane.add(btnAgregar);
+		
+		JButton btnEditarProducto = new JButton("EDITAR PRODUCTO");
+		btnEditarProducto.setBounds(272, 76, 224, 21);
+		contentPane.add(btnEditarProducto);
+		
+		JButton btnBUSCAR = new JButton("BUSCAR PRODUCTO");
+		btnBUSCAR.setBounds(272, 100, 224, 21);
+		contentPane.add(btnBUSCAR);
+		
+		JButton btnELIMINAR = new JButton("ELIMINAR PRODUCTO");
+		btnELIMINAR.setBounds(272, 126, 224, 21);
+		contentPane.add(btnELIMINAR);
+		
+		JButton btnActualizar = new JButton("ACTUALIZAR");
+		btnActualizar.setBounds(495, 175, 102, 21);
+		contentPane.add(btnActualizar);
 	}
 }
