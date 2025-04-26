@@ -144,5 +144,6 @@ public class GUIBODEGA extends JFrame {
 		JButton btnActualizar = new JButton("ACTUALIZAR");
 		btnActualizar.setBounds(495, 175, 102, 21);
 		contentPane.add(btnActualizar);
+		//Modificación Jose Miguel Aguilar Juaréz
 	}
 }
